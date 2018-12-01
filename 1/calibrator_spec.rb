@@ -26,4 +26,11 @@ describe Calibrator do
 
     expect(calibrator.frequency).to eq 3
   end
+
+  it 'can track for repeated frequencies' do
+    calibrator = Calibrator.new [+3, -2, +2, +9999]
+
+    expect(calibrator.repeat).to eq 3
+  end
+
 end
