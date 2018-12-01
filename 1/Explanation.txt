@@ -1,0 +1,10 @@
+So since the first one is so simple, I spent some time getting set up.
+I've made an input reader and made some proof of concept specs.
+
+I do not expect to go this deep on every one of the challenges,
+while they can probably be done in a line or two (this one can be done in a line easily)
+But a setup like this will prepare me for when I do need more organic growth of the code
+
+Having tried this now I also think I will just parse the input directly into an INPUT constant next time
+
+Run Solution.rb from a console to find the answer to this challenge
