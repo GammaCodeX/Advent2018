@@ -28,9 +28,15 @@ describe Calibrator do
   end
 
   it 'can track for repeated frequencies' do
-    calibrator = Calibrator.new [+3, -2, +2, +9999]
+    calibrator = Calibrator.new [+1, -1, +9999]
 
-    expect(calibrator.repeat).to eq 3
+    expect(calibrator.repeat).to eq 0
+  end
+
+  it 'loops (if needed) the input to find a repeat' do
+    calibrator = Calibrator.new [+3, +3, +4, -2, -4]
+
+    expect(calibrator.repeat).to eq 10
   end
 
 end
