@@ -19,4 +19,19 @@ describe Id do
     expect(Id.new('bbcccac').triplicate?).to be_falsy
   end
 
+  it 'knows the distance to another id' do
+    id1 = Id.new 'acdef'
+    id2 = Id.new 'abdef'
+    #              ^
+
+    expect(id1.distance_to id2).to eq 1
+  end
+
+  it 'counts letter under letter' do
+    id1 = Id.new 'abcdef'
+    id2 = Id.new 'acbdef'
+    #              ^^ a single swap makes 2 letters differ
+
+    expect(id1.distance_to id2).to eq 2
+  end
 end
