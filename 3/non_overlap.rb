@@ -1,12 +1,11 @@
 require_relative 'cloth'
 
-def overlap claims
+def non_overlap claims
   cloth = Cloth.new
 
   claims.each do |claim|
     cloth.claim claim
   end
 
-  cloth.overlap
+  cloth.non_overlap.first.id
 end
-
