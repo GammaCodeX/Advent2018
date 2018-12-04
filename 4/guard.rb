@@ -29,6 +29,10 @@ class Guard
       sleeps_at(minute)
     end.last
   end
+
+  def most_sleeps
+    sleeps_at(most_sleeps_minute)
+  end
 end
 
 module Guards

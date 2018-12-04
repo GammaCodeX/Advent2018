@@ -50,6 +50,7 @@ describe Guard do
     expect(guards[99].most_sleeps_minute).to eq 45
 
     expect(guards[99].sleeps_at(45)).to eq 3
+    expect(guards[99].most_sleeps).to eq 3
     expect(guards[99].sleeps_at(44)).to eq 2
     expect(guards[99].sleeps_at(46)).to eq 2
   end
