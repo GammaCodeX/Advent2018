@@ -34,5 +34,4 @@ describe Game do
     expect(Game.new(30, 5807).high_score).to eq 37305
   end
 
-
 end
