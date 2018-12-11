@@ -10,3 +10,4 @@ puts "This is the sky at T=#{moment}"
 puts sky.render_at(time: moment)
 
 
+
